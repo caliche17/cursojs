@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100&subset=latin-ext);
+
+#cards-container {
+  font-family: 'Roboto';
+  display: flex;
+  flex-direction: row;
+
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+#menu{
+  display: flex;
+}
+
+ul {
+	font-family: sans-serif;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  color: #eae6e6;
+}
+li {
+	float: left;
+	margin: 0.5em;
+}
+
+.card {
+  width: 25%;
+  margin: 10px;
+
+}
+
+.card .card1 {
+  background: #9C69E2;
+}
+
+.card .card2 {
+  background: #6600CC;
+}
+
+.card .card3 {
+  background: #3366FF;
+}
+
+.card .card4 {
+  background: #8A8A8A;
+}
+
+.card .card-img {
+  z-index: 2;
+  height: 200px;
+  border-radius: 8px;
+  position: relative;
+  -webkit-box-shadow: -1px 3px 12px 0px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: -1px 3px 12px 0px rgba(0, 0, 0, 0.57);
+  box-shadow: -1px 3px 12px 0px rgba(0, 0, 0, 0.57);
+}
+
+.card .card-img-wrapper {
+  padding: 8px;
+}
+
+.card .card-img>img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.card .card-info {
+  position: relative;
+  top: -60px;
+  -webkit-box-shadow: -1px 3px 12px 0px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: -1px 3px 12px 0px rgba(0, 0, 0, 0.57);
+  box-shadow: -1px 3px 12px 0px rgba(0, 0, 0, 0.57);
+  border-radius: 10px;
+  padding: 20px;
+  padding-top: 50px;
+  height: 40%;
+  margin: auto;
+}
+
+.card .card-info>h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+
+.card .card-info>p {
+  height: 140px;
+  font-size: 10px;
+  line-height: 1.4;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 10;
+}
+
+#title-container {
+  width: 50%;
+  margin: 0px 0px 60px;
+  padding: 8px;
+}
+
+#title-container>h3 {
+  color: gray;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: Helvetica;
+  font-style: normal;
+  font-size: 20px;
+}
+
+#title-container>p {
+  color: gray;
+}
