@@ -17,3 +17,12 @@ body {
   .contenido {
       display: flex;
   }
+  
+  .descripcion {
+    text-align: center;
+  }
+  
+  .descripcion >img {
+    max-width: 120px;
+    max-height: 120px;
+  }
