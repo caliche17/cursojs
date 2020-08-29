@@ -1,6 +1,7 @@
 body {
-    background-image: url('https://www.theeconomyjournal.com/images/showid2/2660295?w=1200&zc=4');
-  }
+  /*background-image: url('https://www.theeconomyjournal.com/images/showid2/2660295?w=1200&zc=4');
+  */
+    }
   header {
     text-align: center;
     border-width: 10px;
@@ -23,6 +24,7 @@ body {
   }
   
   .descripcion >img {
-    max-width: 20%;
-    max-height: 20%;
+    max-width: 120px;
+    max-height: 120px;
   }
+  
