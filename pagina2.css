@@ -23,6 +23,6 @@ body {
   }
   
   .descripcion >img {
-    max-width: 120px;
-    max-height: 120px;
+    max-width: 20%;
+    max-height: 20%;
   }
