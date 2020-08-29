@@ -1,0 +1,19 @@
+body {
+    background-image: url('https://www.theeconomyjournal.com/images/showid2/2660295?w=1200&zc=4');
+  }
+  header {
+    text-align: center;
+    border-width: 10px;
+    border-style: dotted;
+    border-color: yellow;
+  }
+  h1 {
+    background: green;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+  }
+  .contenido {
+      display: flex;
+  }
