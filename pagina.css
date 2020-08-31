@@ -95,3 +95,6 @@ div[class^='i']{
 input {
   float:right;
 }
+a {
+  color: white;
+}
