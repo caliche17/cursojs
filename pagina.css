@@ -1,5 +1,6 @@
 body {
   background-image: url('https://www.theeconomyjournal.com/images/showid2/2660295?w=1200&zc=4');
+  margin: 12px;
 }
 
 header {
@@ -17,22 +18,19 @@ h1 {
   border-radius: 8px;
 }
 
-.imagen-eq {
-  text-align: center;
-}
-
-.imagen-eq >img {
-  max-width: 120px;
-  max-height: 120px;
-}
-
-.nominados {
+.contenido {
   display: flex;
+  margin: 6px;
+  width: auto;
 
 }
 
 .equipo {
   margin: 10px;
+  background: black;
+  height: 450px;
+  width: 30%;
+  text-align: center;
 }
 
 .boton>h4 {
@@ -46,19 +44,23 @@ h1 {
 
 #nacional {
   background: orange;
+  height: max-content;
  }
 #penarol {
   background: green;
+  height: max-content;
 }
 #alahly {
   background: pink;
+  height: max-content;
 }
 #rangers {
   background: red;
+  height: max-content;
 }
 
 .first, p {
-  color: #77DD2B;
+  color: #dd5620;
 }
 
 .first::first-line {
@@ -80,5 +82,16 @@ div[class^='i']{
   .parrafos p:first-child{
  font-size: 200%;
  color:white;
+ text-align: center;
 
+}
+
+.imagen>img {
+  width: 300px;
+  height: 200px;
+  text-align: center;
+}
+
+input {
+  float:right;
 }
