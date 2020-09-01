@@ -96,5 +96,9 @@ input {
   float:right;
 }
 a {
-  color: white;
+  color: black;
+}
+
+ul {
+  font-size:200%
 }

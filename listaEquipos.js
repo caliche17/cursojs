@@ -3,15 +3,6 @@ window.onload = function () {
         'liverpool', 'flamengo', 'barcelona', 'river plate', 'palmeiras'
     ]
 
-    function ListaEquipos() {
-
-        return equipos
-
-    }
-
-    console.log(ListaEquipos());
-
-
     const detalleEquipos = [
 
         {
@@ -72,19 +63,25 @@ window.onload = function () {
         }
     ]
 
-
-    console.log(detalleEquipos);
-
-    console.log(detalleEquipos[4].jugador.edad)
-
-    console.log(detalleEquipos[2].ligas[0])
+    const contenedor = document.querySelector("#lista-equipos");
 
 
+    equipos.forEach(function (text) {
+        const item = document.createElement("li");
+        item.textContent = text;
+        item.className = "equipos";
+        contenedor.appendChild(item);
+        if (text == "barcelona") {
+            item.textContent=null;
+            const a = document.createElement("a");
+            a.setAttribute('href', 'file:///C:/Users/use/Desktop/cursojs/pagina2.html');
+            a.textContent = text;
+            item.appendChild(a);
+            
+        }
+    })
 
-    function imprimirEquipo(equipo) {
-        return 'equipo: ' + equipo.nombre + '\n' + 'estadio: ' + equipo.estadio + '\n' + 'capacidad: ' + equipo.capacidad + '\n' + 'ligas: ' + equipo.ligas.join() + '\n' + 'jugador: ' + equipo.jugador.nombre + ' edad: ' + equipo.jugador.edad + ' dorsal: ' + equipo.jugador.dorsal
 
-    }
-    console.log(imprimirEquipo(detalleEquipos[2]))
+    
 
 }
