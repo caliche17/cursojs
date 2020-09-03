@@ -1,7 +1,7 @@
 body {
-  background-image: url('https://www.theeconomyjournal.com/images/showid2/2660295?w=1200&zc=4');
+  background-image: url('https://image.freepik.com/foto-gratis/fondo-hierba-verde-campo-futbol_41969-2262.jpg');
   margin: 12px;
-}
+  }
 
 header {
   text-align: center;
@@ -12,7 +12,7 @@ header {
 
 h1 {
   background: green;
-  width: 50%;
+  max-width: max-content;
   margin-left: auto;
   margin-right: auto;
   border-radius: 8px;
@@ -20,17 +20,21 @@ h1 {
 
 .contenido {
   display: flex;
-  margin: 6px;
+  margin: 30px;
   width: auto;
 
 }
 
 .equipo {
-  margin: 10px;
-  background: black;
-  height: 450px;
+  margin: 20px;
+  background-image: url("./card.png");
   width: 30%;
   text-align: center;
+  padding: 3px 10px;
+  border-radius: 20px;
+  -webkit-box-shadow: 14px -1px 9px 9px rgba(0,0,0,0.75);
+  -moz-box-shadow: 14px -1px 9px 9px rgba(0,0,0,0.75);
+  box-shadow: 14px -1px 9px 9px rgba(0,0,0,0.75);
 }
 
 .boton>h4 {
@@ -44,29 +48,29 @@ h1 {
 
 #nacional {
   background: orange;
-  height: max-content;
- }
+  }
 #penarol {
   background: green;
-  height: max-content;
-}
+  }
 #alahly {
   background: pink;
-  height: max-content;
-}
+  }
 #rangers {
   background: red;
-  height: max-content;
-}
+  }
 
 .first, p {
   color: #dd5620;
-}
+  }
 
 .first::first-line {
   color: white;
   }
   
+.introduccion{
+  max-width: max-content;
+}
+
 p[class~="first"]{
   background: blue;
 }
@@ -76,29 +80,40 @@ div[id*='e']{
 }
 
 div[class^='i']{
-  background: black;
+  background-image: url("./card.png");
+  border-radius: 8px;
 }
 
   .parrafos p:first-child{
  font-size: 200%;
- color:white;
+ color:rgba(23, 248, 2, 0.973);
  text-align: center;
-
+ white-space: normal;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ background: black;
+ max-width: max-content;
+ border-radius: 8px;
+ margin-left: auto;
+  margin-right: auto;
 }
 
 .imagen>img {
-  width: 300px;
   height: 200px;
   text-align: center;
-}
+  max-width: 90%;
+  }
 
-input {
-  float:right;
-}
 a {
   color: black;
 }
 
 ul {
   font-size:200%
+}
+
+.home {
+  float: right;
+  color: white;
+  font-weight: bold;
 }

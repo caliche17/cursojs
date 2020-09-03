@@ -68,20 +68,16 @@ window.onload = function () {
 
     equipos.forEach(function (text) {
         const item = document.createElement("li");
-        item.textContent = text;
         item.className = "equipos";
         contenedor.appendChild(item);
-        if (text == "barcelona") {
-            item.textContent=null;
-            const a = document.createElement("a");
-            a.setAttribute('href', 'file:///C:/Users/use/Desktop/cursojs/pagina2.html');
-            a.textContent = text;
-            item.appendChild(a);
-            
-        }
+
+        const a = document.createElement("a");
+        a.setAttribute('href', './pagina2.html');
+        a.textContent = text;
+        item.appendChild(a);
     })
 
 
-    
+
 
 }
