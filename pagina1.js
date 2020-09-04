@@ -3,81 +3,19 @@ window.onload = function () {
         'liverpool', 'flamengo', 'barcelona', 'river plate', 'palmeiras'
     ]
 
-    const detalleEquipos = [
-
-        {
-            nombre: 'liverpool',
-            estadio: 'anfield',
-            capacidad: 54074,
-            ligas: ['premier league', 'champions league', 'FA cup'],
-            jugador: {
-                nombre: 'salah',
-                edad: 28,
-                dorsal: 11
-            }
-        },
-        {
-            nombre: 'flamengo',
-            estadio: 'maracana',
-            capacidad: 78838,
-            ligas: ['carioca', 'serie A', 'libertadores'],
-            jugador: {
-                nombre: 'gabigol',
-                edad: 23,
-                dorsal: 9
-            }
-
-        },
-        {
-            nombre: 'barcelona',
-            estadio: 'camp nou',
-            capacidad: 99354,
-            ligas: ['la liga', 'super copa', 'champion league'],
-            jugador: {
-                nombre: 'messi',
-                edad: 33,
-                dorsal: 10
-            }
-        },
-        {
-            nombre: 'river plate',
-            estadio: 'antonio vespuso',
-            capacidad: 70074,
-            ligas: ['Liga Argentina', 'Super Copa AFA', 'Libertadores'],
-            jugador: {
-                nombre: 'borre',
-                edad: 24,
-                dorsal: 7
-            }
-        },
-        {
-            nombre: 'palmeiras',
-            estadio: 'allianz parque',
-            capacida: 55000,
-            ligas: ['serie A', 'copa Brasil', 'Libertadores'],
-            jugador: {
-                nombre: 'gomes',
-                edad: 33,
-                dorsal: 29
-            }
-        }
-    ]
-
     const contenedor = document.querySelector("#lista-equipos");
 
 
     equipos.forEach(function (text) {
         const item = document.createElement("li");
         item.className = "equipos";
+        const valor= equipos.indexOf(text)+1;
+        item.id= valor;
         contenedor.appendChild(item);
-
         const a = document.createElement("a");
-        a.setAttribute('href', './pagina2.html');
+        a.setAttribute('href',"./pagina2.html?equipoId="+valor);
         a.textContent = text;
         item.appendChild(a);
     })
-
-
-
 
 }
