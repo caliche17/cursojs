@@ -56,7 +56,7 @@ h1 {
   background: pink;
   }
 #rangers {
-  background: red;
+  background: rgb(136, 117, 223);
   }
 
 .first, p {
@@ -101,7 +101,7 @@ div[class^='i']{
 .imagen>img {
   height: 200px;
   text-align: center;
-  max-width: 90%;
+  max-width: 100%;
   }
 
 a {
