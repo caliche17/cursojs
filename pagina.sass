@@ -1,0 +1,112 @@
+$green: green
+$black:  #111111
+$white:  #FFFFFF
+$text-align: center
+$max-width: max-content
+$auto: auto
+$font-size: 200%
+$radius: 8px
+
+body 
+  background-image: url('https://image.freepik.com/foto-gratis/fondo-hierba-verde-campo-futbol_41969-2262.jpg')
+  margin: 12px    
+
+  header
+    text-align: $text-align
+    border-width: $radius
+    border-style: dotted
+    border-color: yellow
+    
+h1 
+  background: $green
+  max-width: $max-width
+  margin-left: $auto
+  margin-right: $auto
+  border-radius: $radius
+    
+.contenido
+  display: flex
+  margin: 30px
+  width: $auto
+    
+.equipo 
+  margin: 20px
+  background-image: url("./card.png")
+  width: 30%
+  text-align: $text-align
+  padding: 3px 10px
+  border-radius: $radius
+  -webkit-box-shadow: 14px -1px 9px 9px rgba(0,0,0,0.75)
+  -moz-box-shadow: 14px -1px 9px 9px rgba(0,0,0,0.75)
+  box-shadow: 14px -1px 9px 9px rgba(0,0,0,0.75)
+  
+.boton 
+  h4 
+    border-style: solid
+    -moz-border-radius: 18px
+    -webkit-border-radius: 50px
+    padding: 10px
+    background: #929392
+    text-align: $text-align
+    
+#nacional
+  background: orange
+    
+#penarol
+  background: $green
+    
+#alahly
+  background: pink
+    
+#rangers 
+  background: rgb(136, 117, 223)
+   
+.first, p 
+  color: #dd5620
+   
+.first::first-line 
+  color: $white
+  
+.introduccion
+  max-width: $max-width
+    
+p[class~="first"]
+  background: blue
+ 
+div[id*='e']
+  color: red
+  
+div[class^='i']
+  background-image: url("./card.png")
+  border-radius: $radius
+ 
+.parrafos p:first-child
+  font-size: $font-size
+  color: $green
+  text-align: $text-align
+  white-space: normal
+  overflow: hidden
+  text-overflow: ellipsis
+  background: $black
+  max-width: $max-width
+  border-radius: $radius
+  margin-left: $auto
+  margin-right: $auto
+  
+.imagen
+  img 
+    height: 200px
+    text-align: $text-align
+    max-width: 100%
+
+a 
+  color: $black
+    
+ul 
+  font-size: $font-size
+  
+.home
+  float: right
+  color: $white
+  font-weight: bold
+  
